@@ -1,5 +1,6 @@
 package io.tamatu.springsecurityjwt.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.ManyToAny;
@@ -11,6 +12,7 @@ import java.util.Collection;
 @Entity
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class AppUser {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

@@ -1,5 +1,6 @@
 package io.tamatu.springsecurityjwt.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -11,6 +12,7 @@ import javax.persistence.Id;
 @Entity
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class AppRole {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
